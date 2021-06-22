@@ -1,0 +1,75 @@
+:root {
+    --primary: #2f3947;
+    --secondary: #575e77;
+    --third: #a4a5a7;
+    --button: rgb(0, 151, 151);
+}
+
+html, body  {
+    margin: 0;
+}
+* {
+    font-family: 'Merriweather', serif;
+}
+ 
+h1 {
+    font-size: 1rem;
+
+}
+
+h2, legend {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--primary)
+}
+
+label {
+    color: var(--secondary);
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+p {
+    font-weight: 300;
+    color: var(--third);
+    font-size: .85rem;
+}
+
+fieldset, input, textarea, select{
+    border: none;
+}
+
+input, textarea, select {
+    background: gray;
+    border-radius: 5px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+/* input, select {
+    height: 50px;
+} */
+
+/* Header */
+header {
+    background: var(--primary);
+    height: 90px;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+/* Main */
+
+main {
+    max-width: 92%;
+    margin: 0 auto;
+}
