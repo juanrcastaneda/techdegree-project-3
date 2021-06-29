@@ -160,9 +160,10 @@ textarea {
     margin-top: 20px;
 }
 
-.newsletter label[for] {
+.newsletter label[for]:not(:last-of-type) {
     margin-left: 10px;
 }
+
 
 #javascript-news, #plain-text{
     margin-bottom: 25px;
