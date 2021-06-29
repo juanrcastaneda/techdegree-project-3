@@ -1,12 +1,14 @@
 :root {
     --primary: #2f3947;
-    --secondary: #575e77;
-    --third: #a4a5a7;
-    --button: rgb(0, 151, 151);
+    --secondary: #575b6b;
+    --third: #b4b4b4;
+    --button: rgb(0, 182, 182);
 }
+/* Basic Dry styling */
 
 html, body  {
     margin: 0;
+    background-color: rgb(255, 255, 255);
 }
 * {
     font-family: 'Merriweather', serif;
@@ -18,15 +20,15 @@ h1 {
 }
 
 h2, legend {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 900;
-    color: var(--primary)
+    color: var(--primary);
 }
 
 label {
     color: var(--secondary);
     font-weight: 300;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 p {
@@ -40,22 +42,36 @@ fieldset, input, textarea, select{
 }
 
 input, textarea, select {
-    background: gray;
+    background: rgb(243, 243, 243);
     border-radius: 5px;
 }
+
 
 h2, p {
     text-align: center;
 }
 
-/* input, select {
-    height: 50px;
-} */
+hr {
+   display: inline-block;
+   width: 100%;
+}
+
+fieldset {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline-color: var(--primary);
+}
 
 /* Header */
 header {
     background: var(--primary);
-    height: 90px;
+    height: 70px;
 }
 
 h1 {
@@ -68,8 +84,156 @@ h1 {
 }
 
 /* Main */
+/* Contact Section */
+h2 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+legend {
+    margin-bottom: 20px;
+}
 
 main {
-    max-width: 92%;
+    max-width: 90%;
     margin: 0 auto;
 }
+
+main > p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.thick-line {
+    border: none;
+    height:  4px;
+    background-color: var(--primary);
+    margin-bottom: 3px;
+}
+
+.thin-line {
+    border: none;
+    height:  2px;
+    background-color: var(--primary);
+    margin-bottom: 1px;;
+}
+
+input[type="text"], input[type="email"],input[type="number"], input[type="tel"], select {
+    height: 50px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#zip {
+    width: 50%;
+}
+
+input[type="email"]::placeholder, input[id="name"]::placeholder {            
+    text-align: right;
+    padding-right: 20px;
+    font-style: italic;
+    color: var(--third);
+}
+
+select {
+    color: var(--third);
+    padding-left: 15px;
+}
+
+input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    /* learned how to put padding inside text input without breaking 90% width https://stackoverflow.com/questions/1377719/padding-within-inputs-breaks-width-100 */
+    margin: 0; 
+    padding:0;
+    padding-left: 15px;
+}
+
+/* Newsletter area */
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.newsletter input {
+    margin-top: 20px;
+}
+
+.newsletter label[for] {
+    margin-left: 10px;
+}
+
+#javascript-news, #plain-text{
+    margin-bottom: 25px;
+}
+
+textarea {
+    margin-top: 15px;
+    resize: none;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    background: var(--button);
+    color: white;
+    height: 60px;
+    margin: 5px 0 0 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.contact-container {
+    background: lightblue;
+}
+
+@media (min-width: 768px){
+    main {
+        max-width: 50%;
+    }
+
+    h2{
+        margin-top: 70px;
+    }
+    .no-br {
+        display: none;
+    }
+    .contact label[for] {
+        display: inline-block;
+        width: 29%;
+    }
+
+    input[type="text"], input[type="email"],input[type="number"], input[type="tel"], select {
+        display: inline-block;
+        height: 50px;
+        width: 70%;
+        margin: 10px 0 10px auto;
+    }
+
+    #zip {
+        width: 25%;
+    }
+    .copyright {
+        margin-top: 40px;
+    }
+
+    h2 {
+    font-size: 1.4rem;
+
+    }
+
+}
+
+/* finished B) yeah boiiiiiiiiiiiiiiiiiiii! */
+
+
+
+
