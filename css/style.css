@@ -195,6 +195,10 @@ button {
     background: lightblue;
 }
 
+main {
+    margin-bottom: 40%;
+}
+
 @media (min-width: 768px){
     main {
         max-width: 50%;
@@ -228,6 +232,10 @@ button {
     h2 {
     font-size: 1.4rem;
 
+    }
+
+    main {
+        margin-bottom: 10%;
     }
 
 }
